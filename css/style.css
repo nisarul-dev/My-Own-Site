@@ -1,0 +1,123 @@
+/*
+  1. Header Section
+    1.1 NavBar Area
+    1.2 Hero Area
+*/
+
+/* Controlling variables */
+:root {
+  --color: #6729f6;
+  --primary-font: "PT Sans";
+  --font-size: 1em;
+}
+/* Basic Css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--primary-font);
+  font-weight: 400;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  font-weight: bold;
+}
+
+.btn {
+  text-decoration: none;
+  text-transform: capitalize;
+  display: inline-block;
+  padding: 0.5em 1em;
+  margin: 0.5em;
+  border: 0.15em solid var(--color);
+  border-radius: 10em;
+  color: var(--color);
+  transition: 200ms;
+  font-weight: bold;
+}
+.btn a {
+  vertical-align: middle;
+}
+.btn i {
+  font-size: 1.35em;
+  margin-right: 0.5em;
+  vertical-align: middle;
+}
+
+.btn:hover {
+  background-color: var(--color);
+  color: white;
+}
+
+/*#### 1. Header Area Starts ####*/
+/* 1.1 NavBar Area */
+
+header nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* Making 20vh height for NavBar and placing items vertically center */
+  height: 20vh;
+  align-items: center;
+}
+
+header nav .logo-area img {
+  width: 12em;
+}
+
+header nav .menu-area a {
+}
+
+/* 1.2 Hero Area */
+header .hero-area {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 60vh;
+  align-items: center;
+}
+
+header .hero-area h1 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+header .hero-area h1 span {
+  font-size: 1.7em;
+  font-weight: bold;
+}
+
+header .hero-area .image-area img {
+  width: 30vw;
+  z-index: 99;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 1.2 Hero Area */
+/*
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgb(169, 185, 236);
+  z-index: -1;
+} */
+
+/* Responsiveness */
