@@ -25,7 +25,6 @@
 
 /* Just used to scrool down  */
 body {
-  padding-bottom: 7em;
 }
 
 .container {
@@ -249,23 +248,18 @@ header .hero-area .image-area img {
     font-size: 1.75em;
     text-align: center;
     color: #3b3b3b;
+    margin-bottom: 2.5em;
+  }
+  header .hero-area h4 span {
+    display: inline;
   }
 
   /* 1.2.2 Image Area  */
   header .hero-area .image-area {
     display: none;
   }
-  header .hero-area h4 span {
-    display: inline;
-  }
 }
 
 /* Mobile */
 @media all and (max-width: 600px) {
-}
-
-@media all and (max-height: 640px) {
-  .circles {
-    height: 125%;
-  }
 }
