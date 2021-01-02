@@ -229,6 +229,7 @@ header .hero-area .image-area img {
     display: block;
     text-align: center;
     letter-spacing: 2px;
+    font-weight: 600;
     transform: rotate(-4deg);
   }
 
