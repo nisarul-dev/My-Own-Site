@@ -186,8 +186,8 @@ header .hero-area .image-area img {
       flex-wrap: no-wrap;
       justify-content: space-around;
     }
-    header .hero-area .image-area img {
-    width: 65vw;
+    header .hero-area .image-area{
+     display: none;
     }
 }
 
@@ -198,8 +198,10 @@ header .hero-area .image-area img {
   height: 14vh;
 }
   header .hero-area .text-area h1 {
-    font-size: 1.25em;
+    font-size: 1.5em;
     line-height: 1.2em;
+    font-weight: bold;
+    text-align: center;
   }
   header .hero-area .text-area h1 span {
     font-size: 2.5em;
@@ -207,6 +209,10 @@ header .hero-area .image-area img {
     display: block;
     text-align: center;
     letter-spacing: 2px;
+  }
+  header .hero-area h4 {
+    font-size: 1.75em;
+    text-align: center;
   }
   header .hero-area h4 span {
     display: inline;
