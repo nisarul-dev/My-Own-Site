@@ -1,18 +1,24 @@
 /*
   1. Header Section
     1.1 NavBar Area
+        1.1.1 Logo Area
+        1.1.2 Menu Area
     1.2 Hero Area
+        1.2.1 Text / Left Area
+        1.2.2 Image / Right Area
 */
 
 /* Controlling variables */
 :root {
   --color: #6729f6;
+  --color-dark: #394bed;
   --primary-font: "PT Sans", Arial, Helvetica, sans-serif;
   --fancy-font: "Rogthem", Arial, Helvetica, sans-serif;
   --font-size: 1em;
   --title-color: #141c3a;
   --font-color: #222222;
 }
+
 /* Basic Css */
 * {
   margin: 0;
@@ -20,17 +26,24 @@
   box-sizing: border-box;
   font-family: var(--primary-font);
   font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: var(--font-color);
 }
 
-/* Just used to scrool down  */
-body {
+p {
+  color: color: var(--title-color);
 }
 
 .container {
   width: 80%;
   margin: 0 auto;
-  font-weight: bold;
 }
 
 .btn {
@@ -60,8 +73,11 @@ body {
 }
 
 /*#### 1. Header Area Starts ####*/
-/* 1.1 NavBar Area */
+header {
+  min-height: 98vh;
+}
 
+/* 1.1 NavBar Area */
 header nav {
   display: flex;
   flex-wrap: wrap;
@@ -71,12 +87,10 @@ header nav {
   align-items: center;
 }
 
+/*     1.1.1 Logo Area */
 header nav .logo-area img {
   margin-top: 1.5em;
   width: 12em;
-}
-
-header nav .menu-area a {
 }
 
 /* 1.2 Hero Area */
@@ -88,6 +102,7 @@ header .hero-area {
   align-items: center;
 }
 
+/*    1.2.1 Text / Left Area  */
 header .hero-area h1 {
   color: var(--title-color);
   font-size: 1.75em;
@@ -171,6 +186,10 @@ header .hero-area h4 span {
   display: block;
 }
 
+header .hero-area h4 i {
+  color: var(--color);
+}
+
 header .hero-area .image-area img {
   width: 30vw;
 }
@@ -187,7 +206,7 @@ header .hero-area .image-area img {
 /* Less than 14 inch Laptom */
 @media all and (max-width: 1150px) {
   body {
-    font-size: 0.8em;
+    font-size: 0.75em;
   }
 }
 
@@ -262,4 +281,10 @@ header .hero-area .image-area img {
 
 /* Mobile */
 @media all and (max-width: 600px) {
+}
+
+@media all and (max-height: 640px) {
+  .circles {
+  height: 135%;
+}
 }
