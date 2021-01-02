@@ -263,3 +263,9 @@ header .hero-area .image-area img {
 /* Mobile */
 @media all and (max-width: 600px) {
 }
+
+@media all and (max-height: 640px) {
+  .circles {
+    height: 125%;
+  }
+}
