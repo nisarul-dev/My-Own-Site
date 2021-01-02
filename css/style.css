@@ -60,7 +60,7 @@ header nav {
   flex-wrap: wrap;
   justify-content: space-between;
   /* Making 20vh height for NavBar and placing items vertically center */
-  height: 20vh;
+  min-height: 20vh;
   align-items: center;
 }
 
@@ -76,7 +76,7 @@ header .hero-area {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  height: 70vh;
+  min-height: 70vh;
   align-items: center;
 }
 
@@ -195,7 +195,7 @@ header .hero-area .image-area img {
 @media all and (max-width: 600px) {
   header nav {
     margin-top: 1em;
-  height: 14vh;
+    min-height: 14vh;
 }
   header .hero-area .text-area h1 {
     font-size: 1.5em;
