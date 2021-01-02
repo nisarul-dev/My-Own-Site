@@ -234,7 +234,7 @@ header .hero-area .image-area img {
   /* 1.2.1 Text Area  */
   /* H1 */
   header .hero-area .text-area h1 {
-    font-size: 1.5em;
+    font-size: 1.35em;
     line-height: 1.2em;
     font-weight: bold;
     text-align: center;
@@ -265,7 +265,7 @@ header .hero-area .image-area img {
   }
   /* H4 */
   header .hero-area h4 {
-    font-size: 1.75em;
+    font-size: 1.5em;
     text-align: center;
     color: #3b3b3b;
     margin-bottom: 2.5em;
