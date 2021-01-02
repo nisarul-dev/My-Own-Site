@@ -7,13 +7,14 @@
 /* Controlling variables */
 :root {
   --color: #6729f6;
-  --primary-font: "PT Sans";
+  --primary-font: "PT Sans", Arial, Helvetica, sans-serif;
+  --fancy-font: "Rogthem", Arial, Helvetica, sans-serif;
   --font-size: 1em;
 }
 /* Basic Css */
 * {
   margin: 0;
-  padding: 0;
+  padding: 0;=
   box-sizing: border-box;
   font-family: var(--primary-font);
   font-weight: 400;
@@ -75,24 +76,63 @@ header .hero-area {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  height: 60vh;
+  height: 70vh;
   align-items: center;
 }
 
 header .hero-area h1 {
-  font-size: 1.5em;
-  font-weight: bold;
+  font-size: 1.75em;
+  text-transform: capitalize;
   margin-bottom: 0.5em;
+  line-height: 2.75em;
+  vertical-align: sub;
+}
+
+header .hero-area h1 em {
+  font-size: 1.2em;
+  font-weight: 800;
 }
 
 header .hero-area h1 span {
-  font-size: 1.7em;
+  font-family: var(--fancy-font);
+  font-size: 3em;
   font-weight: bold;
+  vertical-align: bottom;
+  /* Text Color */
+  background-image: linear-gradient(227deg, #3083d0 ,  #6030d0 , #330867 );;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-animation: hue 10s infinite linear;
+  animation-timing-function: ease-in-out;
+-webkit-animation-timing-function: ease-in-out;
 }
+
+@-webkit-keyframes hue {
+  0% {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  25% {
+    -webkit-filter: hue-rotate(60deg);
+  }
+  50% {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  75% {
+    -webkit-filter: hue-rotate(-60deg);
+  }
+  10% {
+    -webkit-filter: hue-rotate(0deg);
+  }
+}
+
+header .hero-area h4 {
+  font-size: 1.25em;
+  text-transform: capitalize;
+}
+
 
 header .hero-area .image-area img {
   width: 30vw;
-  z-index: 99;
 }
 
 
