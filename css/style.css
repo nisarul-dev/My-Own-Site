@@ -10,6 +10,8 @@
   --primary-font: "PT Sans", Arial, Helvetica, sans-serif;
   --fancy-font: "Rogthem", Arial, Helvetica, sans-serif;
   --font-size: 1em;
+  --title-color: #141c3a;
+  --font-color: #222222;
 }
 /* Basic Css */
 * {
@@ -18,6 +20,7 @@
   box-sizing: border-box;
   font-family: var(--primary-font);
   font-weight: 400;
+  color: var(--font-color);
 }
 
 .container {
@@ -65,6 +68,7 @@ header nav {
 }
 
 header nav .logo-area img {
+  margin-top: 1.5em;
   width: 12em;
 }
 
@@ -81,10 +85,12 @@ header .hero-area {
 }
 
 header .hero-area h1 {
+  color: var(--title-color);
   font-size: 1.75em;
   text-transform: capitalize;
+  margin-top: 1em;
   margin-bottom: 0.5em;
-  line-height: 2.75em;
+  line-height: 2.95em;
   vertical-align: sub;
 }
 
@@ -93,18 +99,43 @@ header .hero-area h1 em {
   font-weight: 800;
 }
 
+header .hero-area .text-area h1 > img {
+  display: none;
+}
+
+/* Niasrul Amin Niam Text Animating starts */
 header .hero-area h1 span {
   font-family: var(--fancy-font);
-  font-size: 3em;
-  font-weight: bold;
+  font-size: 3.4em;
+  font-weight: 400;
   vertical-align: bottom;
   /* Text Color */
-  background-image: linear-gradient(227deg, #3083d0 ,  #6030d0 , #330867 );;
+  background-image: linear-gradient(227deg, #3083d0, #6030d0, #330867);
   -webkit-text-fill-color: transparent;
+  background-clip: text;
   -webkit-background-clip: text;
+  animation: hue 10s infinite linear;
   -webkit-animation: hue 10s infinite linear;
   animation-timing-function: ease-in-out;
   -webkit-animation-timing-function: ease-in-out;
+}
+
+@keyframes hue {
+  0% {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  25% {
+    -webkit-filter: hue-rotate(60deg);
+  }
+  50% {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  75% {
+    -webkit-filter: hue-rotate(-60deg);
+  }
+  10% {
+    -webkit-filter: hue-rotate(0deg);
+  }
 }
 
 @-webkit-keyframes hue {
@@ -125,6 +156,8 @@ header .hero-area h1 span {
   }
 }
 
+/* Niasrul Amin Niam Text Animating Ends */
+
 header .hero-area h4 {
   font-size: 1.25em;
   text-transform: capitalize;
@@ -137,31 +170,6 @@ header .hero-area h4 span {
 header .hero-area .image-area img {
   width: 30vw;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 1.2 Hero Area */
-/*
-.slider {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background: rgb(169, 185, 236);
-  z-index: -1;
-} */
 
 /* Responsiveness */
 
@@ -181,28 +189,55 @@ header .hero-area .image-area img {
 
 /* Tablet */
 @media all and (max-width: 900px) {
-    header .hero-area {
-      flex-direction: column-reverse;
-      flex-wrap: no-wrap;
-      justify-content: space-around;
-    }
-    header .hero-area .image-area{
-     display: none;
-    }
-}
-
-/* Mobile */
-@media all and (max-width: 600px) {
+  /* ## 1. Header Area ## */
+  /* 1.1 NavBar Area */
   header nav {
     margin-top: 1em;
     min-height: 14vh;
-}
+  }
+
+  header .menu-area {
+    display: none;
+  }
+
+  /* 1.2 Hero Area */
+  /* 1.2.1 Text Area  */
+  header .hero-area {
+    flex-direction: row;
+  }
+  /* H1 */
   header .hero-area .text-area h1 {
     font-size: 1.5em;
     line-height: 1.2em;
     font-weight: bold;
     text-align: center;
+    margin-bottom: 5vh;
   }
+  header .hero-area .text-area h1 b {
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    position: relative;
+    right: 5em;
+  }
+  /* img */
+  header .hero-area .text-area h1 > img {
+    width: 65vw;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 5vh;
+  }
+  /* H4 */
+
+  /* 1.2.2 Image Area  */
+  header .hero-area .image-area {
+    display: none;
+  }
+
+  header .hero-area {
+    min-height: 80vh;
+  }
+
   header .hero-area .text-area h1 span {
     font-size: 2.5em;
     line-height: 1em;
@@ -213,11 +248,13 @@ header .hero-area .image-area img {
   header .hero-area h4 {
     font-size: 1.75em;
     text-align: center;
+    color: #3b3b3b;
   }
   header .hero-area h4 span {
     display: inline;
   }
-  header .menu-area {
-    display: none;
-  }
+}
+
+/* Mobile */
+@media all and (max-width: 600px) {
 }
