@@ -195,16 +195,19 @@ header .hero-area .image-area img {
     margin-top: 1em;
     min-height: 14vh;
   }
-
   header .menu-area {
     display: none;
   }
 
   /* 1.2 Hero Area */
-  /* 1.2.1 Text Area  */
   header .hero-area {
     flex-direction: row;
   }
+  header .hero-area {
+    min-height: 76vh;
+  }
+
+  /* 1.2.1 Text Area  */
   /* H1 */
   header .hero-area .text-area h1 {
     font-size: 1.5em;
@@ -220,6 +223,15 @@ header .hero-area .image-area img {
     position: relative;
     right: 5em;
   }
+  header .hero-area .text-area h1 span {
+    font-size: 2.5em;
+    line-height: 1em;
+    display: block;
+    text-align: center;
+    letter-spacing: 2px;
+    transform: rotate(-4deg);
+  }
+
   /* img */
   header .hero-area .text-area h1 > img {
     width: 65vw;
@@ -228,27 +240,15 @@ header .hero-area .image-area img {
     margin-bottom: 5vh;
   }
   /* H4 */
-
-  /* 1.2.2 Image Area  */
-  header .hero-area .image-area {
-    display: none;
-  }
-
-  header .hero-area {
-    min-height: 80vh;
-  }
-
-  header .hero-area .text-area h1 span {
-    font-size: 2.5em;
-    line-height: 1em;
-    display: block;
-    text-align: center;
-    letter-spacing: 2px;
-  }
   header .hero-area h4 {
     font-size: 1.75em;
     text-align: center;
     color: #3b3b3b;
+  }
+
+  /* 1.2.2 Image Area  */
+  header .hero-area .image-area {
+    display: none;
   }
   header .hero-area h4 span {
     display: inline;
