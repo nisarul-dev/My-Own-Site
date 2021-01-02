@@ -206,12 +206,15 @@ header .hero-area .image-area img {
 /* Less than 14 inch Laptom */
 @media all and (max-width: 1150px) {
   body {
-    font-size: 0.75em;
+    font-size: 0.7em;
   }
 }
 
 /* Tablet */
 @media all and (max-width: 900px) {
+  body {
+    font-size: 0.8em;
+  }
   /* ## 1. Header Area ## */
   /* 1.1 NavBar Area */
   header nav {
