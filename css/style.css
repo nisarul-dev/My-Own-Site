@@ -14,7 +14,7 @@
 /* Basic Css */
 * {
   margin: 0;
-  padding: 0;=
+  padding: 0;
   box-sizing: border-box;
   font-family: var(--primary-font);
   font-weight: 400;
@@ -104,7 +104,7 @@ header .hero-area h1 span {
   -webkit-background-clip: text;
   -webkit-animation: hue 10s infinite linear;
   animation-timing-function: ease-in-out;
--webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease-in-out;
 }
 
 @-webkit-keyframes hue {
@@ -161,3 +161,43 @@ header .hero-area .image-area img {
 } */
 
 /* Responsiveness */
+
+/* Full HD Desktop */
+@media all and (min-width: 1400px) {
+  body {
+    font-size: 1.25em;
+  }
+}
+
+/* Less than 14 inch Laptom */
+@media all and (max-width: 1150px) {
+  body {
+    font-size: 0.8em;
+  }
+}
+
+/* Tablet */
+@media all and (max-width: 900px) {
+    header .hero-area {
+      flex-direction: column-reverse;
+      flex-wrap: no-wrap;
+      justify-content: space-around;
+    }
+    header .hero-area .image-area img {
+    width: 60vw;
+    }
+}
+
+/* Mobile */
+@media all and (max-width: 600px) {
+  header .hero-area .text-area h1 {
+    font-size: 1.25em;
+    line-height: 1.2em;
+  }
+  header .hero-area .text-area h1 span {
+    font-size: 2.5em;
+    line-height: 1em;
+    display: block;
+    text-align: center;
+  }
+}
