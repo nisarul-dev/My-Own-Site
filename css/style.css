@@ -73,9 +73,7 @@ p {
 }
 
 /*#### 1. Header Area Starts ####*/
-header {
-  min-height: 98vh;
-}
+
 
 /* 1.1 NavBar Area */
 header nav {
