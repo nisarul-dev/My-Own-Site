@@ -23,6 +23,11 @@
   color: var(--font-color);
 }
 
+/* Just used to scrool down  */
+body {
+  padding-bottom: 7em;
+}
+
 .container {
   width: 80%;
   margin: 0 auto;
