@@ -7,7 +7,7 @@
     font-family: 'PT Sans';
     font-style: normal;
     font-weight: normal;
-    src: local('PT Sans'), url('/fonts/PTSans-Regular.woff') format('woff');
+    src: local('PT Sans'), url('../fonts/PTSans-Regular.woff') format('woff');
 }
 
 
@@ -15,7 +15,7 @@
     font-family: 'PT Sans';
     font-style: normal;
     font-weight: bold;
-    src: local('Gotham Rounded Light'), url('/fonts/PTSans-Bold.woff') format('woff');
+    src: local('Gotham Rounded Light'), url('../fonts/PTSans-Bold.woff') format('woff');
 }
 
 /*
@@ -25,5 +25,5 @@
     font-family: 'Rogthem';
     font-style: normal;
     font-weight: normal;
-    src: local('Rogthem'), url('/fonts/Rogthem.woff') format('woff');
+    src: local('Rogthem'), url('../fonts/Rogthem.woff') format('woff');
 }

@@ -1,35 +1,3 @@
-/* Custom fonts of nisarul.com are linked here */
-
-/*
-    1. primary font - "PT Sans"
-*/
-@font-face {
-    font-family: 'PT Sans';
-    font-style: normal;
-    font-weight: normal;
-    src: local('PT Sans'), url('../fonts/PTSans-Regular.woff') format('woff');
-}
-
-
-@font-face {
-    font-family: 'PT Sans';
-    font-style: normal;
-    font-weight: bold;
-    src: local('Gotham Rounded Light'), url('../fonts/PTSans-Bold.woff') format('woff');
-}
-
-/*
-    2. fancy-font - "Rogthem"
-*/
-@font-face {
-    font-family: 'Rogthem';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Rogthem'), url('../fonts/Rogthem.woff') format('woff');
-}
-
-
-
 /*
   1. Header Section
     1.1 NavBar Area
@@ -225,6 +193,10 @@ header .hero-area .image-area img {
 
 /* Mobile */
 @media all and (max-width: 600px) {
+  header nav {
+    margin-top: 1em;
+  height: 10vh;
+}
   header .hero-area .text-area h1 {
     font-size: 1.25em;
     line-height: 1.2em;
