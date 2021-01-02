@@ -162,6 +162,9 @@ header .hero-area h4 {
   text-transform: capitalize;
 }
 
+header .hero-area h4 span {
+  display: block;
+}
 
 header .hero-area .image-area img {
   width: 30vw;
@@ -231,6 +234,10 @@ header .hero-area .image-area img {
     line-height: 1em;
     display: block;
     text-align: center;
+    letter-spacing: 2px;
+  }
+  header .hero-area h4 span {
+    display: inline;
   }
   header .menu-area {
     display: none;
