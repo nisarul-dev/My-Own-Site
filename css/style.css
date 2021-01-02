@@ -187,7 +187,7 @@ header .hero-area .image-area img {
       justify-content: space-around;
     }
     header .hero-area .image-area img {
-    width: 60vw;
+    width: 65vw;
     }
 }
 
@@ -195,7 +195,7 @@ header .hero-area .image-area img {
 @media all and (max-width: 600px) {
   header nav {
     margin-top: 1em;
-  height: 10vh;
+  height: 14vh;
 }
   header .hero-area .text-area h1 {
     font-size: 1.25em;
