@@ -38,7 +38,7 @@ h6 {
 }
 
 p {
-  color: color: var(--title-color);
+  color: var(--title-color);
 }
 
 .container {
@@ -122,7 +122,7 @@ header .hero-area .text-area h1 > img {
   display: none;
 }
 
-/* Niasrul Amin Niam Text Animating starts */
+/* Nisarul Amin Naim Text Animating starts */
 header .hero-area h1 span {
   font-family: var(--fancy-font);
   font-size: 3.4em;
@@ -190,20 +190,24 @@ header .hero-area h4 i {
   color: var(--color);
 }
 
+/*     1.2.2 Image / Right Area */
 header .hero-area .image-area img {
   width: 30vw;
 }
 
-/* Responsiveness */
+/* ########## Responsiveness ##########*/
 
 /* Full HD Desktop */
 @media all and (min-width: 1400px) {
   body {
     font-size: 1.25em;
   }
+  .container {
+    width: 75%;
+  }
 }
 
-/* Less than 14 inch Laptom */
+/* Less than 14 inch Laptop */
 @media all and (max-width: 1150px) {
   body {
     font-size: 0.7em;
