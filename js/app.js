@@ -42,6 +42,7 @@ hamBurgerIcon.addEventListener("click", function () {
   target.classList.toggle("menu-area-active");
   nightIcon.classList.toggle("d-n");
   hamBurgerIcon.classList.toggle("fa-times");
+  hamBurgerIcon.classList.toggle("x-size");
 });
 
 nightIcon.addEventListener("click", () => {
