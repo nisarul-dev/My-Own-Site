@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
     <!--  Font Awesome 5 -->
     <link
       rel="stylesheet"
@@ -12,7 +13,7 @@
     <link rel="stylesheet" href="./css/custom-fonts.css" />
     <link rel="stylesheet" href="./css/custom-animation.css" />
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/responsive.css" />
     <title>Nisarul Amin Naim</title>
   </head>
   <body>
@@ -25,14 +26,18 @@
           <img class="nisarul-logo" src="./images/Logo.png" alt="nisarul" />
         </div>
         <!-- 1.1.2 Menu Area  -->
+        <div class="mobile-menu">
+          <i class="fas fa-moon night-icon"></i>
+          <i class="fas fa-bars"></i>
+        </div>
         <div class="menu-area">
           <!-- Night Mode Switch -->
           <div class="toggle">
             <i class="fas fa-moon"></i>
-            <input onclick="check()" type="checkbox" id="toggle" />
+            <input type="checkbox" id="toggle" />
             <label for="toggle"></label>
           </div>
-          <a class="btn" href="#"> <i class="fas fa-cubes"> </i>Blog </a>
+          <a class="btn" href="#"> <i class="fas fa-cubes"></i>Blog</a>
           <a class="btn" href="#">
             <i class="fas fa-user-circle"></i>Say hello
           </a>
@@ -43,17 +48,21 @@
         <!-- 1.2.1 Text / Left Area  -->
         <div class="text-area">
           <h1>
-            <b>Hey I'm</b> <span>Nisarul Amin Naim</span><br /><img
+            <span class="hi">Hey I'm</span>
+            <strong class="name">Nisarul Amin Naim</strong><br />
+            <img
               src="./images/nisarul-hero-section-picture.webp"
               alt="nisarul amin naim"
-            />An <em> Web Developer </em> and <em>Creative Designer</em>
+            />
+            An <em class="task"> Web Developer </em> and
+            <em class="task">Creative Designer</em>
           </h1>
           <h4>
             I write quality code and design where needed
-            <span
-              >to make Influential creations with
-              <i class="fas fa-heart"></i>.</span
-            >
+            <span class="end-line">
+              to make Influential creations with
+              <i class="fas fa-heart"></i>.
+            </span>
           </h4>
         </div>
         <!-- 1.2.2 Image / Right Area  -->

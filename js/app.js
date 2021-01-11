@@ -1,72 +1,60 @@
-const isChecked = document.getElementById("toggle").checked;
-console.log(isChecked);
+const toggleButton = document.querySelector(".toggle input");
 
-if (isChecked == true) {
-  // Changing The CSS
-  const style = document.createElement("style");
-  style.innerHTML = `
-    body {
-      background-color: #1E1E1E;
-    }
-    :root {
-      --color: #97A1EF;
-      --color-dark: #394bed;
-      --font-size: 1em;
-      --title-color: #ffffff;
-      --font-color: #a2a2a2;
-    }
-    header .hero-area h1 span {
-      background-image: linear-gradient(227deg, #5daffc, #9e74ff, #ff65ff);
-    }
-    `;
-  document.head.appendChild(style);
-}
+const hamBurgerIcon = document.querySelector(".fa-bars");
+const nightIcon = document.querySelector(".night-icon");
+const target = document.querySelector(".menu-area");
 
-function check() {
-  const isChecked = document.getElementById("toggle").checked;
-  console.log(isChecked);
+// creating a Night mode link tag element
+const linkTag = document.createElement("link");
+linkTag.id = "night-css";
+linkTag.setAttribute("rel", "stylesheet");
+linkTag.setAttribute("href", "./css/night-mode.css");
 
-  if (isChecked == true) {
-    // Changing The CSS
-    const style = document.createElement("style");
-    style.innerHTML = `
-    body {
-      background-color: #1E1E1E;
-    }
-    :root {
-      --color: #97A1EF;
-      --color-dark: #394bed;
-      --font-size: 1em;
-      --title-color: #ffffff;
-      --font-color: #a2a2a2;
-    }
-    header .hero-area h1 span {
-      background-image: linear-gradient(227deg, #5daffc, #9e74ff, #ff65ff);
-    }
-    `;
-    document.head.appendChild(style);
+toggleButton.addEventListener("change", dayOrNight);
+function dayOrNight() {
+  if (toggleButton.checked == true) {
+    document.head.insertBefore(
+      linkTag,
+      document.querySelector("head link.icon")
+    );
 
     // Changing The Logo
     document.querySelector(".nisarul-logo").src = "./images/Logo-for-dark.png";
-  } else if (isChecked == false) {
-    const style = document.createElement("style");
-    style.innerHTML = `
-    body {
-      background-color: transparent;
-    }
-    :root {
-      --color: #6729f6;
-      --color-dark: #394bed;
-      --font-size: 1em;
-      --title-color: #141c3a;
-      --font-color: #222222;
-    }
-    header .hero-area h1 span {
-      background-image: linear-gradient(227deg, #3083d0, #6030d0, #330867);
-    }
-    `;
-    document.head.appendChild(style);
+    nightIcon.classList.toggle("fa-sun");
+  } else {
+    document.head.removeChild(linkTag);
     // Changing The Logo
     document.querySelector(".nisarul-logo").src = "./images/Logo.png";
+    nightIcon.classList.toggle("fa-sun");
   }
 }
+
+// Running the function While loading the page for the first time
+if (toggleButton.checked == true) {
+  document.head.insertBefore(linkTag, document.querySelector("head link.icon"));
+  document.querySelector(".nisarul-logo").src = "./images/Logo-for-dark.png";
+  nightIcon.classList.toggle("fa-sun");
+}
+
+// Mobile Menu Marketing
+
+hamBurgerIcon.addEventListener("click", function () {
+  target.classList.toggle("menu-area-active");
+  nightIcon.classList.toggle("d-n");
+  hamBurgerIcon.classList.toggle("fa-times");
+});
+
+nightIcon.addEventListener("click", () => {
+  if (toggleButton.checked == true) {
+    toggleButton.checked = false;
+    console.log("no-1");
+    dayOrNight();
+
+    // nightIcon.classList.toggle("fa-sun");
+  } else {
+    console.log("no-2");
+    toggleButton.checked = true;
+    dayOrNight();
+    // nightIcon.classList.toggle("fa-sun");
+  }
+});

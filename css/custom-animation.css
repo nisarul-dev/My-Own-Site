@@ -1,64 +1,122 @@
-/* Toggle Button For Night Mode */
-.toggle {
-  position: fixed;
-  bottom: 0.5rem;
-  right: 2rem;
-}
-.toggle i {
-  position: absolute;
-  bottom: -4.5em;
-  right: -8px;
-  transform: translate(0);
-  font-size: 1.5rem;
-  color: white;
-  background-color: #36323a;
-  height: 200px;
-  text-align: center;
-  width: 60px;
-  padding: 15px;
-  border-radius: 100px;
-  border: 2px solid #6729f6;
-}
-.toggle label {
-  background-color: #97a1ef;
-  border-radius: 50px;
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: all ease-in-out 0.3s;
-  width: 45px;
-  height: 25px;
+/* 1. Nisarul Amin Niam Animation */
+
+/* Nisarul Amin Naim Text Animating starts */
+header .hero-area h1 .name {
+  font-family: var(--fancy-font);
+  font-size: 3.4em;
+  font-weight: 400;
+  vertical-align: bottom;
+  /* Text Color */
+  background-image: linear-gradient(227deg, #3083d0, #6030d0, #330867);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: hue 10s infinite linear;
+  -webkit-animation: hue 10s infinite linear;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease-in-out;
 }
 
-.toggle input[type="checkbox"] {
-  display: none;
+@keyframes hue {
+  0% {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  25% {
+    -webkit-filter: hue-rotate(60deg);
+  }
+  50% {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  75% {
+    -webkit-filter: hue-rotate(-60deg);
+  }
+  10% {
+    -webkit-filter: hue-rotate(0deg);
+  }
 }
 
-.toggle label::after {
-  background-color: #1e1e1e;
-  border-radius: 50%;
-  content: " ";
-  cursor: pointer;
-  display: inline;
-  position: absolute;
-  left: 2px;
-  top: 2px;
-  transition: all ease-in-out 0.3s;
-  width: 21px;
-  height: 21px;
+@-webkit-keyframes hue {
+  0% {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  25% {
+    -webkit-filter: hue-rotate(60deg);
+  }
+  50% {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  75% {
+    -webkit-filter: hue-rotate(-60deg);
+  }
+  10% {
+    -webkit-filter: hue-rotate(0deg);
+  }
 }
 
-.toggle input[type="checkbox"]:checked ~ label {
-  background-color: white;
+/* Nisarul Amin Naim Text Animating Ends */
+
+/* 2. Toggle Button For Night Mode */
+@media all and (min-width: 601px) {
+  .toggle {
+    position: fixed;
+    bottom: 0.5rem;
+    right: 2rem;
+  }
+  .toggle i {
+    position: absolute;
+    bottom: -4.5em;
+    right: -8px;
+    transform: translate(0);
+    font-size: 1.5rem;
+    color: white;
+    background-color: #36323a;
+    height: 200px;
+    text-align: center;
+    width: 60px;
+    padding: 15px;
+    border-radius: 100px;
+    border: 2px solid #6729f6;
+  }
+  .toggle label {
+    background-color: #97a1ef;
+    border-radius: 50px;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: all ease-in-out 0.3s;
+    width: 45px;
+    height: 25px;
+  }
+
+  .toggle input[type="checkbox"] {
+    display: none;
+  }
+
+  .toggle label::after {
+    background-color: #1e1e1e;
+    border-radius: 50%;
+    content: " ";
+    cursor: pointer;
+    display: inline;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    transition: all ease-in-out 0.3s;
+    width: 21px;
+    height: 21px;
+  }
+
+  .toggle input[type="checkbox"]:checked ~ label {
+    background-color: white;
+  }
+
+  .toggle input[type="checkbox"]:checked ~ label::after {
+    background-color: #6729f6;
+    transform: translateX(20px);
+  }
 }
 
-.toggle input[type="checkbox"]:checked ~ label::after {
-  background-color: #6729f6;
-  transform: translateX(20px);
-}
-
-/* Square pop up background */
-
+/* 3. Square pop up background */
 .circles {
   position: absolute;
   top: 0;

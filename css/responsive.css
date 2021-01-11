@@ -1,0 +1,135 @@
+/* ########## Responsiveness ##########*/
+
+/* Full HD Desktop */
+@media all and (min-width: 1400px) {
+  body {
+    font-size: 1.25em;
+  }
+  .container {
+    width: 75%;
+  }
+}
+
+/* Less than 14 inch Laptop */
+@media all and (max-width: 1150px) {
+  body {
+    font-size: 0.7em;
+  }
+}
+
+/* Tablet */
+@media all and (max-width: 900px) {
+  body {
+    font-size: 0.8em;
+  }
+  /* ## 1. Header Area ## */
+  /* 1.1 NavBar Area */
+  header nav {
+    margin-top: 1em;
+    min-height: 14vh;
+  }
+
+  /* 1.2 Hero Area */
+  header .hero-area {
+    flex-direction: row;
+  }
+  header .hero-area {
+    min-height: 76vh;
+  }
+
+  /* 1.2.1 Text Area  */
+  /* H1 */
+  header .hero-area .text-area h1 {
+    font-size: 1.5em;
+    line-height: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 5vh;
+  }
+  header .hero-area .text-area h1 .hi {
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    position: relative;
+    right: 5em;
+  }
+  header .hero-area .text-area h1 .name {
+    font-size: 2.5em;
+    line-height: 1em;
+    display: block;
+    text-align: center;
+    letter-spacing: 2px;
+    transform: rotate(-4deg);
+  }
+
+  /* img */
+  header .hero-area .text-area h1 > img {
+    width: 65vw;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 5vh;
+  }
+  /* H4 */
+  header .hero-area h4 {
+    font-size: 1.5em;
+    text-align: center;
+    color: #3b3b3b;
+    margin-bottom: 2.5em;
+  }
+  header .hero-area h4 .end-line {
+    display: inline;
+  }
+
+  /* 1.2.2 Image Area  */
+  header .hero-area .image-area {
+    display: none;
+  }
+}
+
+/* Mobile */
+@media all and (max-width: 600px) {
+  header nav .menu-area {
+    display: none;
+  }
+
+  header nav .mobile-menu {
+    display: block;
+    position: absolute;
+    top: 3.5em;
+    right: 3em;
+  }
+
+  .mobile-menu i {
+    color: var(--color);
+    font-size: 1.75em;
+    margin: 0 0 0 1.5em;
+    cursor: pointer;
+  }
+
+  .mobile-menu {
+    z-index: 9999;
+  }
+
+  header nav .menu-area div {
+    display: none;
+  }
+
+  header nav .menu-area-active {
+    background-color: #e1e7ff;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header nav .menu-area-active a {
+    min-width: 50vw;
+    text-align: center;
+  }
+}

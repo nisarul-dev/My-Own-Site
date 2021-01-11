@@ -1,0 +1,35 @@
+/* style.css  */
+:root {
+  --color: #97a1ef;
+  --color-dark: #394bed;
+  --font-size: 1em;
+  --title-color: #ffffff;
+  --font-color: #a2a2a2;
+}
+
+body {
+  background-color: #1e1e1e;
+}
+
+header .hero-area h1 .name {
+  background-image: linear-gradient(227deg, #5daffc, #9e74ff, #ff65ff);
+}
+
+/* custom-animation.css */
+.circles li {
+  background: rgba(96, 120, 255, 0.15);
+}
+
+@media all and (max-width: 900px) {
+  /* ## 1. Header Area ## */
+  /* H4 */
+  header .hero-area h4 {
+    color: #bebebe;
+  }
+}
+
+@media all and (max-width: 600px) {
+  header nav .menu-area-active {
+    background-color: #000e4e;
+  }
+}

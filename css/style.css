@@ -46,6 +46,10 @@ p {
   margin: 0 auto;
 }
 
+.d-n {
+  display: none;
+}
+
 .btn {
   text-decoration: none;
   text-transform: capitalize;
@@ -93,6 +97,10 @@ header nav .logo-area img {
   width: 12em;
 }
 
+header nav .mobile-menu {
+  display: none;
+}
+
 /* 1.2 Hero Area */
 header .hero-area {
   display: flex;
@@ -113,7 +121,7 @@ header .hero-area h1 {
   vertical-align: sub;
 }
 
-header .hero-area h1 em {
+header .hero-area h1 .task {
   font-size: 1.2em;
   font-weight: 800;
 }
@@ -122,67 +130,12 @@ header .hero-area .text-area h1 > img {
   display: none;
 }
 
-/* Nisarul Amin Naim Text Animating starts */
-header .hero-area h1 span {
-  font-family: var(--fancy-font);
-  font-size: 3.4em;
-  font-weight: 400;
-  vertical-align: bottom;
-  /* Text Color */
-  background-image: linear-gradient(227deg, #3083d0, #6030d0, #330867);
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
-  animation: hue 10s infinite linear;
-  -webkit-animation: hue 10s infinite linear;
-  animation-timing-function: ease-in-out;
-  -webkit-animation-timing-function: ease-in-out;
-}
-
-@keyframes hue {
-  0% {
-    -webkit-filter: hue-rotate(0deg);
-  }
-  25% {
-    -webkit-filter: hue-rotate(60deg);
-  }
-  50% {
-    -webkit-filter: hue-rotate(0deg);
-  }
-  75% {
-    -webkit-filter: hue-rotate(-60deg);
-  }
-  10% {
-    -webkit-filter: hue-rotate(0deg);
-  }
-}
-
-@-webkit-keyframes hue {
-  0% {
-    -webkit-filter: hue-rotate(0deg);
-  }
-  25% {
-    -webkit-filter: hue-rotate(60deg);
-  }
-  50% {
-    -webkit-filter: hue-rotate(0deg);
-  }
-  75% {
-    -webkit-filter: hue-rotate(-60deg);
-  }
-  10% {
-    -webkit-filter: hue-rotate(0deg);
-  }
-}
-
-/* Nisarul Amin Naim Text Animating Ends */
-
 header .hero-area h4 {
   font-size: 1.25em;
   text-transform: capitalize;
 }
 
-header .hero-area h4 span {
+header .hero-area h4 .end-line {
   display: block;
 }
 
@@ -193,99 +146,4 @@ header .hero-area h4 i {
 /*     1.2.2 Image / Right Area */
 header .hero-area .image-area img {
   width: 30vw;
-}
-
-/* ########## Responsiveness ##########*/
-
-/* Full HD Desktop */
-@media all and (min-width: 1400px) {
-  body {
-    font-size: 1.25em;
-  }
-  .container {
-    width: 75%;
-  }
-}
-
-/* Less than 14 inch Laptop */
-@media all and (max-width: 1150px) {
-  body {
-    font-size: 0.7em;
-  }
-}
-
-/* Tablet */
-@media all and (max-width: 900px) {
-  body {
-    font-size: 0.8em;
-  }
-  /* ## 1. Header Area ## */
-  /* 1.1 NavBar Area */
-  header nav {
-    margin-top: 1em;
-    min-height: 14vh;
-  }
-  header .menu-area {
-    display: none;
-  }
-
-  /* 1.2 Hero Area */
-  header .hero-area {
-    flex-direction: row;
-  }
-  header .hero-area {
-    min-height: 76vh;
-  }
-
-  /* 1.2.1 Text Area  */
-  /* H1 */
-  header .hero-area .text-area h1 {
-    font-size: 1.5em;
-    line-height: 1.2em;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 5vh;
-  }
-  header .hero-area .text-area h1 b {
-    font-weight: bold;
-    text-align: center;
-    display: block;
-    position: relative;
-    right: 5em;
-  }
-  header .hero-area .text-area h1 span {
-    font-size: 2.5em;
-    line-height: 1em;
-    display: block;
-    text-align: center;
-    letter-spacing: 2px;
-    transform: rotate(-4deg);
-  }
-
-  /* img */
-  header .hero-area .text-area h1 > img {
-    width: 65vw;
-    margin: 0 auto;
-    display: block;
-    margin-bottom: 5vh;
-  }
-  /* H4 */
-  header .hero-area h4 {
-    font-size: 1.5em;
-    text-align: center;
-    color: #3b3b3b;
-    margin-bottom: 2.5em;
-  }
-  header .hero-area h4 span {
-    display: inline;
-  }
-
-  /* 1.2.2 Image Area  */
-  header .hero-area .image-area {
-    display: none;
-  }
-}
-
-/* Mobile */
-@media all and (max-width: 600px) {
 }
