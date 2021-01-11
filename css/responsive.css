@@ -90,7 +90,7 @@
 @media all and (max-width: 600px) {
   header nav .menu-area {
     display: none;
-    background-color: #e1e7ff;
+    background-color: var(--color);
     position: fixed;
     height: 100vh;
     width: 100vw;
@@ -101,7 +101,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    clip-path: circle(1000px at 100% -10%);
+    clip-path: circle(0 at 88.6% 7.5%);
+    transition: 500ms ease-in-out;
   }
 
   header nav .menu-area a {
@@ -137,22 +138,8 @@
   header nav .menu-area div {
     display: none;
   }
-  header nav .menu-area {
-    clip-path: circle(100px at 100% -10%);
-    transition: 300ms;
-  }
   header nav .menu-area-active {
     background-color: #e1e7ff;
-    position: fixed;
-    height: 100vh;
-    width: 100vw;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     clip-path: circle(1000px at 100% -10%);
   }
 }
