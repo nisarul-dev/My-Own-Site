@@ -1,9 +1,9 @@
 /* ########## Responsiveness ##########*/
 
 /* Full HD Desktop */
-@media all and (min-width: 1400px) {
+@media all and (min-width: 1600px) {
   body {
-    font-size: 1.25em;
+    font-size: 1.2em;
   }
   .container {
     width: 75%;
@@ -11,7 +11,7 @@
 }
 
 /* Less than 14 inch Laptop */
-@media all and (max-width: 1150px) {
+@media all and (max-width: 1190px) {
   body {
     font-size: 0.7em;
   }
